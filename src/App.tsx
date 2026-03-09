@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { startGlobalAmbient } from "@/hooks/useAudio";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import WelcomePage from "./pages/WelcomePage";
 import TransformasiGeometriMenuPage from "./pages/TransformasiGeometriMenuPage";
 import VideoPembelajaranPage from "./pages/VideoPembelajaranPage";
 import TentangAplikasiPage from "./pages/TentangAplikasiPage";
@@ -82,7 +83,7 @@ const AppInner = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<MenuPage />} />
+      <Route path="/" element={<WelcomePage />} />
       <Route path="/menu" element={<MenuPage />} />
       <Route path="/petunjuk" element={<PetunjukPage />} />
       <Route path="/materi" element={<MateriPage />} />
